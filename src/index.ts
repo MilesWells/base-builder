@@ -1,5 +1,6 @@
-import {app, BrowserWindow} from 'electron';
 import * as path from 'path';
+import * as url from 'url';
+import {app, BrowserWindow} from 'electron';
 
 // main config options loading
 import * as config from './config.json';
@@ -16,7 +17,13 @@ app.on('ready', () => {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, '../index.html'));
+  mainWindow.loadURL(
+    url.format({
+      pathname: path.join(__dirname, 'index.html'),
+      protocol: 'file:',
+      slashes: true
+    })
+  );
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();

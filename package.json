@@ -6,12 +6,20 @@
   "author": "Miles Wells <mileswells93@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
-    "start": "yarn build && electron ./dist/index.js"
+    "dev": "tsc && cp ./index.html ./dist/index.html && electron ./dist/index.js",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "devDependencies": {
-    "electron": "^5.0.1",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
     "typedoc": "^0.14.2",
-    "typescript": "^3.4.5"
+    "typescript": "^3.4.5",
+    "electron-prebuilt-compile": "5.0.1"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
