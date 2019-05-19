@@ -4,4 +4,6 @@ export default interface Terrain {
   arable: Resolver<boolean>;
   buildable: Resolver<boolean>;
   navigable: Resolver<boolean>;
+
+  tickEvent: () => void;
 }
