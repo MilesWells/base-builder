@@ -1,0 +1,17 @@
+{
+  "name": "base-builder-engine",
+  "version": "1.0.0",
+  "description": "A base builder game engine",
+  "main": "index.js",
+  "author": "Miles Wells <mileswells93@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && electron ./dist/index.js"
+  },
+  "devDependencies": {
+    "electron": "^5.0.1",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.4.5"
+  }
+}

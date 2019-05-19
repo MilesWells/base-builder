@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "outDir": "dist",
+    "paths": {
+      "*": ["node_modules/*"]
+    },
+    "resolveJsonModule": true,
+    "sourceMap": true
+  },
+  "include": ["src/**/*"]
+}
