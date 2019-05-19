@@ -1,4 +1,4 @@
-import Resolver from './Resolver';
+import {Resolver} from '../base';
 
 export default interface Terrain {
   arable: Resolver<boolean>;

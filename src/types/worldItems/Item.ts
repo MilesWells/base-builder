@@ -1,11 +1,10 @@
-import Vector from './Vector';
-import Resolver from './Resolver';
+import {Resolver, Vector} from '../base';
 
 export default interface Item {
-  movable: Resolver<boolean>;
   buildable: Resolver<boolean>;
+  movable: Resolver<boolean>;
   navigable: Resolver<boolean>;
-  stackable: Resolver<boolean>;
   position: Resolver<Vector>;
+  stackable: Resolver<boolean>;
   speed: Resolver<Vector>;
 }
