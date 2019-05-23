@@ -1,12 +1,9 @@
 {
   "compilerOptions": {
-    "jsx": "react",
-    "moduleResolution": "node",
-    "noImplicitAny": true,
-    "outDir": "dist",
+    "module": "commonjs",
+    "outDir": "./dist/",
     "resolveJsonModule": true,
     "sourceMap": true,
-    "target": "es6"
-  },
-  "include": ["src/**/*"]
+    "target": "es5"
+  }
 }
